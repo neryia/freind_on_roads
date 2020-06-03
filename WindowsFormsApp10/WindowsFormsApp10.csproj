@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB06752F-55F8-4AAE-A7F8-4492E79BE811}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp10</RootNamespace>
+    <AssemblyName>WindowsFormsApp10</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="error.cs" />
+    <Compile Include="error_vol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error_vol.Designer.cs">
+      <DependentUpon>error_vol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_user.Designer.cs">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="smart_algo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="smart_algo.Designer.cs">
+      <DependentUpon>smart_algo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="op_room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="op_room.Designer.cs">
+      <DependentUpon>op_room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query.Designer.cs">
+      <DependentUpon>query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="querytxt.cs" />
+    <Compile Include="costumer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="costumer.designer.cs">
+      <DependentUpon>costumer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cost_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cost_form.designer.cs">
+      <DependentUpon>cost_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drags.designer.cs">
+      <DependentUpon>drags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="errors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors.designer.cs">
+      <DependentUpon>errors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="events.designer.cs">
+      <DependentUpon>events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="querybtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="querybtn.Designer.cs">
+      <DependentUpon>querybtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opening_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opening_screen.designer.cs">
+      <DependentUpon>opening_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="val_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="val_form.designer.cs">
+      <DependentUpon>val_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteers.designer.cs">
+      <DependentUpon>Volunteers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_user.resx">
+      <DependentUpon>add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costumer.resx">
+      <DependentUpon>costumer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cost_form.resx">
+      <DependentUpon>cost_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drags.resx">
+      <DependentUpon>drags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors.resx">
+      <DependentUpon>errors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="events.resx">
+      <DependentUpon>events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error_vol.resx">
+      <DependentUpon>error_vol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="op_room.resx">
+      <DependentUpon>op_room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query.resx">
+      <DependentUpon>query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opening_screen.resx">
+      <DependentUpon>opening_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="querybtn.resx">
+      <DependentUpon>querybtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="smart_algo.resx">
+      <DependentUpon>smart_algo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="val_form.resx">
+      <DependentUpon>val_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteers.resx">
+      <DependentUpon>Volunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgruond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient-linear-blue-purple-1920x1080-c2-8a2be2-000080-a-0-f-14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient-linear-blue-purple-1920x1080-c2-8a2be2-000080-a-0-f-141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient-linear-blue-purple-1920x1080-c2-8a2be2-000080-a-0-f-142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgruond1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הורדה.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2020-05-14 at 16.27.50.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\הורדה1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
