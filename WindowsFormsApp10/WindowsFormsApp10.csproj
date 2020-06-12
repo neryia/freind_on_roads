@@ -234,9 +234,6 @@
     <None Include="Resources\gradient-linear-blue-purple-1920x1080-c2-8a2be2-000080-a-0-f-141.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\unnamed.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\gradient-linear-blue-purple-1920x1080-c2-8a2be2-000080-a-0-f-142.jpg" />
   </ItemGroup>
   <ItemGroup>

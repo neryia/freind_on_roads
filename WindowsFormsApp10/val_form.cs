@@ -191,7 +191,6 @@ namespace WindowsFormsApp10
 
         private void updatefields(object sender, EventArgs e)
         {
-
             choose(txt_real, txt_val_code, txt_light, txt_find_how);
             x();
         }
@@ -227,7 +226,7 @@ namespace WindowsFormsApp10
                 for (int j = 0; j < txt_light.Items.Count; j++)
                 {
                     bb = aa[i].Split('.');
-                    if (txt_light.Items[j].ToString().Contains(bb[0]))
+                    if (txt_light.Items[j].ToString().Equals(bb[0]))
                         txt_light.SetItemChecked(j, true);
 
                 }
@@ -352,6 +351,7 @@ namespace WindowsFormsApp10
 
         private void click_event(object sender, DataGridViewCellEventArgs e)
         {
+            clean_Click(sender,e);
             string a = "";
             if (dataGridView1.SelectedCells.Count > 0)
             {

@@ -22,8 +22,7 @@ namespace WindowsFormsApp10
                 for (int g = 0; g < num_errors.Length; g++)
                 {
                     num_errors[g] = 0;
-                }
-            
+                }            
         }
 
         public void setNUMError_()

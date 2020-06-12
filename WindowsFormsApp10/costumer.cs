@@ -204,6 +204,7 @@ namespace WindowsFormsApp10
 
         private void choose(object sender, DataGridViewCellEventArgs e) // פעולה שמציגה מידע של שורה בטבלה ע"י לחיצה עליה
         {
+            clean_Click(sender, e);
             string a = "";
             if (dataGridView1.SelectedCells.Count > 0)
             {

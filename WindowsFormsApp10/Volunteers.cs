@@ -41,6 +41,7 @@ namespace WindowsFormsApp10
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            clean_Click(sender, e);
             string a = "";
             if (dataGridView1.SelectedCells.Count > 0)
             {

@@ -51,11 +51,20 @@ namespace WindowsFormsApp10
 
         public void restart() // ריענון הדף 
         {
-            try
+            using (SqlConnection connection = new SqlConnection(con))
             {
-                this.restart();
+                try
+                {
+                    string query2 = "select events_.coordiant_x,events_.coordiant_y,events_.date, events_.event_code, val_form.Num_of_val_form, Volunteers.first_name,Volunteers.last_name,Volunteers.phone, costumer_form.Num_of_costumer_form, costumer.first_name,costumer.last_name,costumer.phone, costumer.type_car from events_ inner join val_form on events_.Num_of_val_form = val_form.Num_of_val_form inner join Volunteers on val_form.code_Volunteers = Volunteers.code_Volunteers inner join costumer_form on events_.Num_of_costumer_form = costumer_form.Num_of_costumer_form inner join costumer on costumer_form.code_costumer = costumer.code_costumer  where events_.status_ = 0 and events_.date = '" + DateTime.Today.ToString(format) + "' ";
+                    SqlCommand command1 = new SqlCommand(query2, connection);
+                    SqlDataAdapter datadp1 = new SqlDataAdapter(command1);
+                    DataTable dt1 = new DataTable("כוננים");
+                    datadp1.Fill(dt1);
+                    dataGridView1.DataSource = dt1.DefaultView;
+                }
+                catch (Exception ee) { }
             }
-            catch (Exception ee) { }
+
         }
 
         private void התנתקותToolStripMenuItem_Click(object sender, EventArgs e)

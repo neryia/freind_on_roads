@@ -178,6 +178,7 @@ namespace WindowsFormsApp10
 
         private void click_event(object sender, DataGridViewCellEventArgs e) // פונקציית הצגת מידע של שורה בטבלה שהמשתמש לחץ עליה
         {
+            clean_Click(sender, e);
             string a = "";
             if (dataGridView1.SelectedCells.Count > 0)
             {

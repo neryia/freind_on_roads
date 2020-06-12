@@ -296,7 +296,8 @@ namespace WindowsFormsApp10
             int maxIndex = errors.ToList().IndexOf(maxValue);
             return maxIndex;
         }
-        private int eee(int[] errors)
+
+        private int eee(int[] errors) // מציאת הערך השני הכי גבוה במערך
         {
             int maxValue = errors[0];
             int to_max = errors[0];

@@ -21,3 +21,4 @@ C:\Users\USER\Desktop\פרוייקט - עיצוב\WindowsFormsApp10\obj\Debug\Wi
 C:\Users\USER\Desktop\פרוייקט - עיצוב\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\פרוייקט - עיצוב\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.exe
 C:\Users\USER\Desktop\פרוייקט - עיצוב\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.pdb
+C:\Users\USER\Desktop\פרוייקט - עיצוב\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.csprojAssemblyReference.cache

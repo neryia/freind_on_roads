@@ -239,6 +239,7 @@ namespace WindowsFormsApp10
 
         private void click(object sender, DataGridViewCellEventArgs e)  // פעולה שמציגה מידע של שורה בטבלה ע"י לחיצה עליה 
         {
+            clean_Click(sender, e);
             string a = "";
             try
             {
